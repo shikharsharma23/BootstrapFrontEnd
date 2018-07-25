@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+    <!-- Animate Min .css for animations -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- WOW.js works in tandom with Animate.css to provide us with animations -->
+     <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+
+    <!-- Our Stylesheet!!-->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+
+    <!-- Our code goes here -->
+
+   <!-- Start : Navigation bar Code -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">&#9776;</span> <!-- button will be visible on smaller screen and we link it to data target which is the id of navigation bar --><!-- The data-target attribute should contain a CSS selector that points to the HTML Element that will be changed.-->
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo-small.png" class="img-fluid"></a> <!-- img class fluid to allow responsiveness --> 
+        <div class="collapse navbar-collapse" id="navigation-bar"> <!-- collapse, navbar-collapse, nav-item are keywords from bootstrap-->
+            <ul class="navbar-nav ml-auto"> <!-- align margin left means to send to right -->
+                <li class="nav-item"><a class="nav-link" href="#social">CONNECT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#who">WHO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why">WHY</a></li>
+                <li class="nav-item"><a class="nav-link" href="#customers">CUSTOMERS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">PRICING</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+
+   <!-- End : Navigation bar Code -->
+
+      <!-- HEADER -->
+      
+      <section id="header">
+        
+          <div class="container"> <!-- This if from bootstrap layout. Container, then row, then column -->
+            
+              <div class="row"> <!-- Add one row for header section with two columns, image and desc on right and form on left --> 
+                  <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s" data-wow-duartion="2s"> <!-- on medium device and above column will be of 6 each and get stacked below medium devices -->
+                    <!-- wow and fadein provides fadeIn animation effect using animate.css and wow.js-->
+                    <!-- data-wow-delay is attribute via which we can change the delay of animation -->
+                    <img src="img/logo.png" class="img-fluid"/>
+                      <h2>THINGS WORK BETTER IN SPACE</h2>
+                      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, repudiandae reprehenderit doloremque fugiat molestias, corporis voluptas.</p> <!-- lead tag used to emphasize this text on smaller device where text below will vanish due to d-none in case of d-md-block-->
+                      <p class="hidden-sm-down d-none d-md-block">Optio quibusdam quis, repudiandae reprehenderit doloremque fugiat molestias, corporis voluptas. Lorem ipsum dolor sit amet, consectetur.</p> <!-- hide this using d-none class provided from bootstrap -->
+                  </div>
+                  
+                  <div class="col-md-6 header-right d-none d-md-block wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s"> <!-- Hide this form on stacked version on smaller tag using d-none-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, reprehenderit doloremque fugiat molestias, corporis voluptas.</p>
+                      <form>
+                        <fieldset class="form-group">
+                            <label class="sr-only">Name</label>
+                            <input type="text" class="form-control" placeholder="Your name...">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label class="sr-only">Email</label>
+                            <input type="email" class="form-control" placeholder="Your email...">
+                        </fieldset>
+                        <button type="submit" class="btn btn-outline-info btn-block">sign up</button> <!--relevant classes assign to design button in that manner -->
+                      </form>
+                  </div>
+              </div>
+              
+              <div class="row">
+                    <div class="col-md-12 text-center wow swing" data-wow-delay="2s"> <!-- 2s delay so that this action occurs after previous two animations-->
+                        <a href="#social"><i class="fa fa-chevron-down fa-3x"></i></a> <!-- the dowwn button which when click redirects to social section -->
+                    </div>
+              </div>
+          
+          </div>
+          
+      </section>
+      
+    <!-- END HEADER --> 
+
+
+      <!-- SOCIAL -->
+      
+      <section id="social">
+        <div class="container wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s"> <!--again container to organize content-->
+            <div class="row">
+            
+                <div class="col-md-6"> <!-- 6 columns for test and 6 for icons-->
+                    <h2>Connect with us:</h2>
+                    <hr align="left" width="50%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, quis.</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+                
+            </div>  
+        </div>
+      </section>
+      
+    <!-- END SOCIAL -->
+
+
+     <!-- WHO -->
+      
+      <section id="who">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="1s">
+                    <h2>Who we are...</h2>
+                    <hr align="left" width="50%">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, quis.</p>
+                    <p>Morbi scelerisque risus vitae ex pulvinar, convallis finibus ligula tincidunt. Aliquam mattis mi vel diam ornare vulputate. Aliquam sagittis diam turpis, in molestie nisl placerat sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                    <button type="button" class="btn btn-who">Find out more</button>
+                </div>
+                
+                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="1s">
+                    <img class="img-fluid" src="img/what-image.png"/>
+                </div>
+            
+            </div>  
+        </div>
+      </section>
+      
+    <!-- END WHO -->
+
+   <!-- WORK -->
+      
+      <section id="work">
+        <div class="container text-xs-center" >
+            <div class="row">
+            
+                <div class="col-md-12 wow fadeInUp" > <!-- take up 12 columns on largest screen -->
+                    <h2>Our Latest Work</h2>
+                    <hr align="left" width="30%">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, quis.</p>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3 col-sm-6 wow fadeIn " data-wow-delay="0.1s"> <!-- Take 6 columns on small screen (means 12/6 = 2cards in a row), Take 3 columns (means 12/4=3 cards in  a row) on medium screen and for extra small by default every card stacks over each other -->
+                    
+                    <div class="card"> <!-- cards are nice to use in bootstrap 4 to represent image with text below and link to redirect -->
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/buildings.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+
+               <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/fair.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/city.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/rose.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="row">
+            <div class="col-md-3 col-sm-6">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/skate.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/track.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/goldengate.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    
+                    <div class="card">
+                    <div class="work-img">
+                      <a href="#"><img class="card-img-top img-fluid" src="img/girl-field.jpg" alt="Card image cap"><div class="img-overlay"></div></a>
+                    </div>
+                      <div class="card-block">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+      </section>
+      
+    <!-- END WORK -->
+
+      <section id="why">
+        <div class="container text-xs-center"> <!-- align text of alll elements of container child at center -->
+        
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2 align="center">Why work with us?</h2>
+                    <hr width="30%">
+                    <p align="center">Because we are the best at what we do!</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-thumbs-o-up fa-3x"></i>
+                    <h3>Customer Satisfaction</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, reprehenderit doloremque fugiat molestias, corporis voluptas.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-line-chart fa-3x"></i>
+                    <h3>Instant Results</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, reprehenderit doloremque fugiat molestias, corporis voluptas.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-trophy fa-3x"></i>
+                    <h3>Award Winning Service</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam quis, reprehenderit doloremque fugiat molestias, corporis voluptas.</p>
+                </div>
+            </div>
+            
+        </div>
+      </section>
+      
+    <!-- END WHY -->
+      
+      <!-- CUSTOMERS -->
+      
+      <section id="customers">
+        <div class="container text-center">
+            <div class="row">
+            
+                <div class="col">
+                    <h2>Customers</h2>
+                    <hr width="30%">
+                    <p>Read what some of our customers had to say about our service...</p>
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                
+                <div class="col">
+                    <div id="quotes" class="carousel slide" data-ride="carousel"> <!--  Carouseul for slider , Blockquote for quote format and fa-str for stars-->
+                      <ol class="carousel-indicators">
+                        <li data-target="#quotes" data-slide-to="0" class="active"></li> <!-- targets for carouseul is a list of data target-->
+                        <li data-target="#quotes" data-slide-to="1"></li>
+                        <li data-target="#quotes" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                          <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        </blockquote>
+                        </div>
+                        <div class="carousel-item">
+                          <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                              <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+      </section>
+      
+    <!-- END CUSTOMERS -->
+
+
+      
+    <!-- PRICING -->
+      
+      <section id="pricing">
+        <div class="container text-xs-center">
+            <div class="row">
+            
+                <div class="col-md-12">
+                    <h2 align="center">Pricing</h2>
+                    <hr width="30%">
+                    <p class="lead" align="center">Pricing structure for our services that cannot be beaten...</p>
+                </div>
+                
+            </div>  
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card"> <!-- Making a card here when we put class= card it can style norml lu and li list and give card effect. card-header specifies its header and list-group item , list-hroup-flush , list group are bootstrap tag for item -->
+                        <div class="card-header">BASIC</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>2</strong> profiles</li>
+                            <li class="list-group-item"><strong>£0</strong> / month</li>
+                            <li class="list-group-item"><strong>1GB</strong> storage</li>
+                            <li class="list-group-item"><strong>10GB</strong> bandwidth</li>
+                            <li class="list-group-item"><strong>1</strong> FTP account</li>
+                            <li class="list-group-item"><strong>Website</strong> integration</li>
+                            <li class="list-group-item"><strong>Basic</strong> customisation</li>
+                            <li class="list-group-item"><strong>Email</strong> support</li>
+                        </ul>
+                        <div class="card-block">
+                            <button type="button" class="btn btn-outline-info btn-block">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header standard">STANDARD</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>100</strong> profiles</li>
+                            <li class="list-group-item"><strong>£29</strong> / month</li>
+                            <li class="list-group-item"><strong>50GB</strong> storage</li>
+                            <li class="list-group-item"><strong>50GB</strong> bandwidth</li>
+                            <li class="list-group-item"><strong>10</strong> FTP accounts</li>
+                            <li class="list-group-item"><strong>Website</strong> integration</li>
+                            <li class="list-group-item"><strong>Advanced</strong> customisation</li>
+                            <li class="list-group-item"><strong>Call</strong> support</li>
+                        </ul>
+                        <div class="card-block">
+                            <button type="button" class="btn btn-outline-info btn-block">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">PRO</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Unlimited</strong> profiles</li>
+                            <li class="list-group-item"><strong>£59</strong> / month</li>
+                            <li class="list-group-item"><strong>1TB</strong> storage</li>
+                            <li class="list-group-item"><strong>Unlimited</strong> bandwidth</li>
+                            <li class="list-group-item"><strong>100</strong> FTP accounts</li>
+                            <li class="list-group-item"><strong>Website</strong> integration</li>
+                            <li class="list-group-item"><strong>Advanced</strong> customisation</li>
+                            <li class="list-group-item"><strong>24/7</strong> support</li>
+                        </ul>
+                        <div class="card-block">
+                            <button type="button" class="btn btn-outline-info btn-block">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+    <!-- END PRICING -->
+      
+
+ <!-- CONTACT -->
+      
+      <section id="contact">
+        <div class="container text-xs-center wow zoomIn" data-wow-delay="0.3s" >
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 align="center">Contact Us</h2>
+                    <hr width="30%">
+                    <p align="center">Need to get in touch? Fill in the form below for more information:</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="contactform"> <!-- form tag-->
+                        <div class="col-md-12">
+                            <fieldset class="form-group">  <!-- field set . we assign classes which do styling using bootstrap-->
+                                <input type="email" class="form-control form-control-sm" id="email" placeholder="email...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="name" placeholder="name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                                <input type="text" class="form-control form-control-sm" id="subject" placeholder="subject...">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset class="form-group">
+                                <textarea class="form-control form-control-sm" id="message" placeholder="message..." rows="3"></textarea>
+                            </fieldset>
+                            
+                            <button type="submit" class="btn btn-outline-info btn-block">submit</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+      </section>
+      
+    <!-- END CONTACT -->
+      
+
+
+    <!-- FOOTER -->
+      
+      <section id="footer">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-8 col-sm-6">
+                    <h3>About XL TECHNOLOGY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper ante sem. Donec id sollicitudin lorem. Etiam id quam a velit scelerisque tempus. Phasellus sit amet velit sagittis, accumsan nunc id, hendrerit mi. Donec auctor leo non lectus auctor congue. Aliquam maximus placerat turpis ut auctor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <h3>Say hello:</h3>
+                    <ul class="list-unstyled">
+                        <li><p><strong><i class="fa fa-map-marker"></i> Address:</strong> Location, Street, Code</p></li>
+                        <li><p><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="#">info@randomemail.com</a></p></li>
+                        <li><p><strong><i class="fa fa-phone"></i> Phone:</strong> +01 234 567 8910</p></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <p>&copy; 2016 Designed by xxxx</p>
+                </div>
+            </div>
+            
+        </div>
+      </section>
+      
+    <!-- END FOOTER -->
+      
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
